@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Buddy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.0/math.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="bot-info">
+                <div class="bot-avatar"><i class="fa-solid fa-robot"></i></div>
+                <div>
+                    <h2>Math Buddy</h2>
+                    <span class="status">Online & Ready to Calculate</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-box" id="chat-box">
+            <div class="message bot-message">
+                Hello! I am <strong>Math Buddy</strong>. 🧮<br>
+                Try asking me things like:<br>
+                - <code>derivative("x^2 + 2x", "x")</code><br>
+                - <code>det([-1, 2; 3, 1])</code><br>
+                - <code>simplify("2x + x")</code>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Ask Math Buddy a problem..." autocomplete="off">
+            <button id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
